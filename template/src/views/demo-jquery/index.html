@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="apple-mobile-web-app-capable" content="no" />
+  <meta name="format-detection" content="telephone=no">
+  <title>{{name}}</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- inject:vendor:css -->
+  <!-- endinject -->
+  <!-- inject:common:css -->
+  <!-- endinject -->
+  <!-- inject:page:css -->
+  <!-- endinject -->
+</head>
+
+<body>
+  <h1>loading...</h1>
+  <p>jQuery虽然正在逐渐被Vue、React等新兴框架所替代，但其拥有非常广大的生态圈，旗下众多功能强大的插件依然能够帮助我们大幅的提高研发效率、开发高质量的WEB应用。</p>
+  <p>借助FEZ工程框架，我们可以使用ES6/ES7的标准特性开发基于jQuery的项目。</p>
+  <h3>FEZ提倡使用jQuery时代的方式来引入jquery和相关插件。</h3>
+  <dl>
+    <dt>1、使用Bower安装jQuery或插件</dt>
+    <dd>FEZ会自动把Bower安装后的文件引入到html页面，发布代码时可在fez.config.js配置合并规则。</dd>
+    <dd>如果您的项目使用了大量的插件建议使用此方式。</dd>
+  </dl>
+  <dl>
+    <dt>2、把jQuery或插件代码放在common目录</dt>
+    <dd>FEZ会自动把common目录中的文件引入到html页面，发布代码时可在fez.config.js配置合并规则。</dd>
+    <dd>如果您的项目有自行开发或修改过的插件建议使用此方式。</dd>
+  </dl>
+  <dl>
+    <dt>3、把jQuery或插件代码放在verdor目录</dt>
+    <dd>把vendor目录中的文件手动引入html页面，发布代码时使用<a href="https://github.com/nelsyeung/usemin">usemin</a>配置合并规则。</dd>
+    </dd>
+  </dl>
+  <dl>
+    <dt>4、使用CDN地址引入jquery和插件</dt>
+    <dd>可选择公司或公共的cdn地址来引入，浏览器可以长期缓存。</dd>
+    </dd>
+  </dl>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- inject:vendor:js -->
+  <!-- endinject -->
+  <!-- inject:common:js -->
+  <!-- endinject -->
+  <!-- inject:page:js -->
+  <!-- endinject -->
+</body>
+
+</html>

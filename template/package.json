@@ -1,0 +1,73 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {},
+  "repository": {},
+  "keywords": [
+    "CYB",
+    "塞伯坦",
+    "前端工程",
+    "前端模块化",
+    "前端自动化"
+  ],
+  "devDependencies": {
+    {{#if_eq  modelConfig "react"}}
+    "babel-preset-react": "^6.24.1",
+    "react-hot-loader": "^4.3.2",
+    {{/if_eq }}
+    {{#if_eq  modelConfig "vue"}}
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    {{/if_eq }}
+    {{#lint}}
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    {{#if_eq  modelConfig "vue"}}
+    "eslint-plugin-vue": "^4.0.0",
+    {{/if_eq }}
+    {{#if_eq  modelConfig "react"}}
+    "eslint-plugin-react": "^7.10.0",
+    {{/if_eq }}
+    {{#if_eq lintConfig "standard"}}
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    {{/if_eq}}
+    {{#if_eq lintConfig "airbnb"}}
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-import-resolver-webpack": "^0.10.0",
+    "eslint-plugin-import": "^2.11.0",
+    {{/if_eq}}
+    {{/lint}}
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-runtime": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^4.12.0"
+  },
+  "dependencies": {
+    {{#if_eq  modelConfig "react"}}
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+    {{/if_eq }}
+    {{#if_eq  modelConfig "vue"}}
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+    {{/if_eq }}
+    {{#if_eq  modelConfig "jquery"}}
+    "jquery": "^3.3.1"
+    {{/if_eq }}
+  },
+  "author": "CYB前端小组",
+  "license": "MIT",
+  "bugs": {},
+  "homepage": "https://github.com/jd-cyb/cyb-cli#readme"
+}

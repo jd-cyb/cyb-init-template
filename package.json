@@ -1,0 +1,17 @@
+{
+  "name": "cyb-init-template",
+  "version": "1.0.0",
+  "description": "使用cyb-cli创建项目模板",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jd-cyb/cyb-init-template.git"
+  },
+  "author": "CYB前端小组",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jd-cyb/cyb-init-template/issues"
+  },
+  "homepage": "https://github.com/jd-cyb/cyb-init-template#readme"
+}
