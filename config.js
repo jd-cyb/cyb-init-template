@@ -3,11 +3,12 @@ module.exports = {
     type: 'input',
     name: 'projectName',
     message: '请填写项目目录名（字母或数字组合）：',
-    default: 'fez-template'
+    default: 'cyb-template'
   }, {
     type: 'list',
     name: 'style',
     message: '请选择样式编译：',
+    default: 'scss',
     choices: [{
       name: 'Sass',
       value: 'scss',
@@ -36,6 +37,7 @@ module.exports = {
     type: 'list',
     name: 'modelConfig',
     message: '请选择技术平台：',
+    default: 'none',
     choices: [{
       name: 'none (configure it yourself)',
       checked: false,
@@ -68,6 +70,7 @@ module.exports = {
     name: 'lintConfig',
     type: 'list',
     message: '选择Eslint预置配置：',
+    default: 'none',
     choices: [{
         name: 'none (自行配置eslint规则)',
         value: 'none',
@@ -87,6 +90,7 @@ module.exports = {
     type: 'list',
     name: 'autoInstall',
     message: '是否自动安装NPM包？',
+    default: 'npm',
     choices: [{
         name: 'Yes, use NPM',
         value: 'npm',
