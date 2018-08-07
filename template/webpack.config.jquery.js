@@ -5,14 +5,8 @@
  * =================================
  */
 
-
 module.exports = {
-  {{#lint}}
-  /**
-   * 启用/禁用 eslint 检测
-   */
-  eslint: {
-    available: true
+  externals: {
+    jquery: 'jQuery'
   }
-  {{/lint}}
 }

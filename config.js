@@ -112,6 +112,7 @@ module.exports = {
     '.eslintrc.js': 'lint',
     '.eslintignore': 'lint',
     'src/views/demo-jquery/': "userModel && modelConfig === 'jquery'",
+    'webpack.config.jquery.js': "userModel && modelConfig === 'jquery'",
     'src/views/demo-react/': "userModel && modelConfig === 'react'",
     'src/views/demo-vue/': "userModel && modelConfig === 'vue'",
     'webpack.config.vue.js': "userModel && modelConfig === 'vue'"
