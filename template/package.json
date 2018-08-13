@@ -25,6 +25,8 @@
     {{#lint}}
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.0",
     {{#if_eq  modelConfig "vue"}}
     "eslint-plugin-vue": "^4.0.0",
     {{/if_eq }}

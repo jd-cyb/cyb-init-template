@@ -111,6 +111,7 @@ module.exports = {
   filters: {
     '.eslintrc.js': 'lint',
     '.eslintignore': 'lint',
+    'webpack.config.eslint.js': "lint",
     'src/views/demo-jquery/': "userModel && modelConfig === 'jquery'",
     'webpack.config.jquery.js': "userModel && modelConfig === 'jquery'",
     'src/views/demo-react/': "userModel && modelConfig === 'react'",
