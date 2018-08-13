@@ -2,7 +2,7 @@ const eslintFriendlyFormatter = require('eslint-friendly-formatter')
 const config = require('./cyb.config.js')
 
 const eslintLoader = () => ({
-  test: /\.(js|vue)$/,
+  test: /\.(js{{#if_eq  modelConfig "vue"}}|vue{{/if_eq }})$/,
   loader: 'eslint-loader',
   enforce: 'pre',
   exclude: /(node_modules|bower_components)/,
