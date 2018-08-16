@@ -39,7 +39,8 @@ module.exports = {
     extends: [{{#if_eq modelConfig "vue"}}'plugin:vue/essential'{{/if_eq}}{{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended"{{/if_eq}}
     ],{{/if_eq}}
     plugins: [{{#if_eq modelConfig "vue"}}'vue'{{/if_eq}}{{#if_eq modelConfig "react"}}'react'{{/if_eq}}],
-    rules: {{{#if_eq lintConfig "standard"}}
+    rules: {
+      {{#if_eq lintConfig "standard"}}
       // allow async-await
       'generator-star-spacing': 'off',{{/if_eq}}{{#if_eq lintConfig "airbnb"}}
       // don't require .vue extension when importing
