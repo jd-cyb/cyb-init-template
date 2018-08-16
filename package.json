@@ -1,6 +1,6 @@
 {
   "name": "cyb-init-template",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "使用cyb-cli创建项目模板",
   "main": "",
   "scripts": {},
