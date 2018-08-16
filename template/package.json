@@ -15,57 +15,54 @@
   "devDependencies": {
     {{#if_eq  modelConfig "react"}}
     "babel-preset-react": "^6.24.1",
-    "react-hot-loader": "^4.3.2",
+    "react-hot-loader": "^4.3.4",
     {{/if_eq }}
     {{#if_eq  modelConfig "vue"}}
-    "vue-loader": "^15.2.4",
-    "vue-style-loader": "^4.1.0",
-    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.16.5",
+    "vue-loader": "^15.3.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
     {{/if_eq }}
     {{#lint}}
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.3.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.0",
     {{#if_eq  modelConfig "vue"}}
-    "eslint-plugin-vue": "^4.0.0",
+    "eslint-plugin-vue": "^4.7.1",
     {{/if_eq }}
     {{#if_eq  modelConfig "react"}}
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react": "^7.11.1",
     {{/if_eq }}
     {{#if_eq lintConfig "standard"}}
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-import-resolver-webpack": "^0.10.0",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
     {{/if_eq}}
     {{/lint}}
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^7.1.5",
     "babel-runtime": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "webpack": "^4.12.0"
+    "babel-preset-stage-0": "^6.24.1"
   },
   "dependencies": {
     {{#if_eq  modelConfig "react"}}
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
     {{/if_eq }}
     {{#if_eq  modelConfig "vue"}}
-    "vue": "^2.5.16",
+    "vue": "^2.5.17",
     "vue-router": "^3.0.1"
-    {{/if_eq }}
-    {{#if_eq  modelConfig "jquery"}}
-    "jquery": "^3.3.1"
     {{/if_eq }}
   },
   "author": "CYB前端小组",

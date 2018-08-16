@@ -7,7 +7,7 @@ module.exports = {
   }, {
     type: 'list',
     name: 'style',
-    message: '请选择样式编译：',
+    message: '请选择样式编译：(用于创建首页demo)',
     default: 'scss',
     choices: [{
       name: 'Sass',
@@ -63,6 +63,7 @@ module.exports = {
     name: 'lint',
     type: 'confirm',
     message: '是否使用Eslint检测代码？',
+    default: true
   }, {
     when: function(answers) {
       return answers.lint === true;

@@ -1,4 +1,4 @@
 # {{name}}
 
-> A cyb project
+> A cyb project.
 

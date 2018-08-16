@@ -5,7 +5,6 @@
  * =================================
  */
 
-
 /**
  * ---------------------------------
  * eslint配置文件，具体配置请参考：
@@ -29,35 +28,20 @@ module.exports = {
         commonjs: true,
         es6: true{{#if_eq modelConfig "jquery"}},
         jquery: true{{/if_eq}}
-    },
-    {{#if_eq lintConfig "standard"}}
-    extends: [
-        {{#if_eq modelConfig "vue"}}'plugin:vue/essential',{{/if_eq}}
-        {{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended",{{/if_eq}}
+    },{{#if_eq lintConfig "standard"}}
+    extends: [{{#if_eq modelConfig "vue"}}'plugin:vue/essential',{{/if_eq}}{{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended",{{/if_eq}}
         // https://github.com/standard/standard/blob/master/docs/RULES-en.md
         'standard'
-    ],
-    {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
-    extends: [
-        {{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended",{{/if_eq}}
-        {{#if_eq modelConfig "vue"}}'plugin:vue/essential',{{/if_eq}}
+    ],{{/if_eq}}{{#if_eq lintConfig "airbnb"}}
+    extends: [{{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended",{{/if_eq}}{{#if_eq modelConfig "vue"}}'plugin:vue/essential',{{/if_eq}}
         'airbnb-base'
-    ],
-    {{/if_eq}}
-    {{#if_eq lintConfig "none"}}
-    extends: [
-      {{#if_eq modelConfig "vue"}}'plugin:vue/essential'{{/if_eq}}
-      {{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended"{{/if_eq}}
-    ],
-    {{/if_eq}}
+    ],{{/if_eq}}{{#if_eq lintConfig "none"}}
+    extends: [{{#if_eq modelConfig "vue"}}'plugin:vue/essential'{{/if_eq}}{{#if_eq modelConfig "react"}}"eslint:recommended","plugin:react/recommended"{{/if_eq}}
+    ],{{/if_eq}}
     plugins: [{{#if_eq modelConfig "vue"}}'vue'{{/if_eq}}{{#if_eq modelConfig "react"}}'react'{{/if_eq}}],
-    rules: {
-      {{#if_eq lintConfig "standard"}}
+    rules: {{{#if_eq lintConfig "standard"}}
       // allow async-await
-      'generator-star-spacing': 'off',
-      {{/if_eq}}
-      {{#if_eq lintConfig "airbnb"}}
+      'generator-star-spacing': 'off',{{/if_eq}}{{#if_eq lintConfig "airbnb"}}
       // don't require .vue extension when importing
       'import/extensions': ['error', 'always', {
         js: 'never',
@@ -76,7 +60,6 @@ module.exports = {
       // allow optionalDependencies
       'import/no-extraneous-dependencies': ['error', {
         optionalDependencies: ['test/unit/index.js']
-      }],
-      {{/if_eq}}
+      }],{{/if_eq}}
     }
 }

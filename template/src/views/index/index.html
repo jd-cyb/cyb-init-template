@@ -25,21 +25,23 @@
   <h3>项目目录结构</h3>
   <pre>
 {{name}}
-├── fez.config.js              // FEZ功能配置 文件
+├── cyb.config.js              // CYB功能配置 文件
 ├── package.json               // 独立package配置 文件
+├── webpack.config.*.js        // webpack配置 文件 (可选)
+├── .babelrc                   // babel编译配置 文件
+├── .editorconfig              // 编码风格配置 文件
+├── .eslintrc.js               // eslint配置 文件 (可选)
 └── src                        // 源码 目录
-    ├── static                 // 静态资源 目录
+    ├── static                 // 静态资源 目录（可选）
     │   ├── fonts              // 字体 目录
     │   ├── images             // 图片 目录
     │   └── styles             // 样式 目录
     │       └── index.{{style}}     // 首页样式 文件
     └── views
-        ├── index              // 首页 目录
-        │   ├── index.html     // 首页HTML 文件
-        │   ├── index.js       // 首页逻辑脚本 文件
-        │   └── module         // 首页模块 目录
-        └── public             // 项目公共库、工具文件 目录
-            └── module         // 项目公共模块 目录
+        └── index              // 首页 目录
+            ├── index.html     // 首页HTML 文件
+            ├── index.js       // 首页逻辑脚本 文件
+            └── module         // 首页模块 目录(可自定义)
   </pre>
   {{/if_eq}}
   {{#if_eq pagetype "page"}}
@@ -49,12 +51,12 @@
 └── src
     ├── static
     │   └── styles
-    │       └── {{name}}.{{style}}  /／ {{name}} 页面样式文件
+    │       └── {{name}}.{{style}}  /／ {{name}} 页面样式文件 （可选）
     └── views
         └── {{name}}           /／ {{name}} 页面目录
             ├── index.html     /／ {{name}} HTML页面
             ├── index.js       /／ {{name}} 业务逻辑脚本文件
-            └── module         /／ {{name}} 模块目录
+            └── module         /／ {{name}} 模块目录 （可自定义）
   </pre>
   {{/if_eq}}
   <!-- inject:vendor:js -->
