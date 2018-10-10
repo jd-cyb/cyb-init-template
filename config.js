@@ -63,7 +63,7 @@ module.exports = {
     name: 'lint',
     type: 'confirm',
     message: '是否使用Eslint检测代码？',
-    default: true
+    default: false
   }, {
     when: function(answers) {
       return answers.lint === true;
